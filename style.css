@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    letter-spacing: 0.1em;
+    
+}
+
+
+nav {
+    padding: 1em 2em !important;
+    box-shadow: 4px 4px 10px rgba(8, 8, 8, 0.846);
+    text-align: center;
+    position: sticky !important;
+    top: 0;
+
+}
+
+nav img {
+    width: 50px;
+}
+
+.btn-light {
+    color: red !important;
+    font-size: 1rem !important;
+    border-radius: 25px !important;
+    margin-left: 2.5em;
+}
+
+.btn-light:hover {
+    background: #ffffff00 !important;
+    color: #fff !important;
+    border:  1px solid #fff !important;
+    transition: 0.2s;
+
+}
+
+button {
+    background: #fff !important;
+    border-radius: 25px !important;
+    border: none !important;
+
+}
+
+button:hover {
+    border: 1px solid red !important;
+    transition: 0.2s;
+}
+
+
+header {
+    background: url(./assets/img/hotel.jpg) no-repeat center;
+    height: 91.8vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 25, 25, 0.482);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5em;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10em;
+}
+
+.hero h1 {
+    font-size: 3.13rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 4em 0 3em 0;
+    text-align: center;
+    letter-spacing: .3em;
+    
+}
+
+.hero h4 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6.25em;
+}
+
+.hero a {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+   
+}
+
+.hero a:hover {
+    background: #ffffff00;
+    color: #fff;
+    border:  1px solid #fff;
+    transition: 0.2s;
+}
+
+
+/******************************************* 
+
+                MAIN  
+
+********************************************/
+
+/****SERCVICES****/
+
+
+#services {
+    background-color: #000000;
+    background-image: linear-gradient(132deg, #000000 0%, #331a0e 27%, #050505 43%, #372015 75%, #000000 100%);
+}
+
+#services .transition {
+    width: 100%;
+    height: 40em;
+    margin-top: 0;    
+}
+
+#services .transition-resto {
+    background: url(./assets/img/resto2.jpg) no-repeat center fixed;
+    background-size: cover;  
+}
+
+#services .transition-hotel {
+    background: url(./assets/img/hotel3.webp) no-repeat center fixed; 
+    background-size: cover;  
+}
+
+#services .transition-spa {
+    background: url(./assets/img/spa2.jpg) no-repeat center fixed;
+    background-size: cover;  
+}
+
+
+
+
+h3 {
+    letter-spacing: .3em;
+}
+
+#services h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#services h3 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 4em 0;
+    text-align: center;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 7em;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12em;
+    align-items: center;
+}
+
+.service-item img {
+    border-radius: 25px;
+    width: 25em;
+    height: 18em;
+    box-shadow: 10px 15px 40px rgba(0, 0, 0, 0.799);
+}
+
+.description {
+    margin-left: 3.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.service-item:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.service-item:nth-child(odd) .description {
+    margin-right: 3.2em;
+    margin-left: 0;
+    text-align: end;
+}
+
+.service-item:nth-child(odd) .description h4, .service-item:nth-child(odd) .description p {
+    text-align: end;
+}
+
+.description h4 {
+    font-size: 1.3rem;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.description p {
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-align: justify;
+}
+
+
+/****RESERVATION****/
+
+#reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+    background-color: whitesmoke;
+}
+
+.reservation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    margin: 4em;
+    width: 45em;
+    background: url(./assets/img/hotel.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 15px 10px 40px rgba(27, 27, 27, 0.862);
+
+}
+
+.title h3 {
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2.5em 0;
+    text-align: center;
+}
+
+.horaires {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+}
+
+.horaires h4 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 3px 3px black;
+
+}
+
+.horaires p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 3px 3px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25em;
+}
+
+input {
+    border-radius: 25px !important;
+    background-color: rgba(245, 245, 245, 0.546) !important;
+    font-size: 1.2rem;
+}
+
+form button {
+    color: #fff !important;
+    background-color: black !important;
+    border: none;
+}
+
+form button:hover {
+    color: black !important;
+    background-color: #fff !important;
+    border: 2px solid black !important;
+    transition: 0.2s !important;
+}
+
+textarea {
+    width: 100%;
+    height: 15em;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.546) !important;
+
+}
+
+
+/******************************************* 
+
+                FOOTER  
+
+********************************************/
+
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #1a1a1a;
+    box-shadow: 4px 4px 10px rgba(8, 8, 8, 0.846);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 3em 1em;
+    color: #7b7979;
+}
+
+footer .socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .socials img{
+    width: 50px;
+    margin: 20px;
+}
+
+footer .rgpd {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .rgpd a {
+    text-decoration: none;
+    color: #7b7979;
+    font-size: 20px;
+    font-weight: 500;    
+}
+
+
+/*** MEDIA QUERIES ***/
+
+
+@media screen and (max-width: 1070px) {
+    footer {
+        flex-direction: column;
+        gap: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        padding:  0 8em;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+        margin: 5em 0 2em 0;
+    }
+
+    .service-card {
+        padding: 0 5em;
+        margin: 0;
+    }
+
+    .service-item {
+        flex-direction: column !important;
+        margin-bottom:  5em;
+    }
+
+    .service-item img {
+        width: 90%;
+        height: 15em;
+        margin-bottom: 2em;
+    }
+
+    .description h4, .description p, .description{
+        text-align: center;
+        margin: 0;
+    }
+
+    .description h4 {
+        margin-bottom: 1.5em;
+    }
+
+    .service-item:nth-child(odd) .description {
+        margin-right: 0;
+    }
+    
+    .service-item:nth-child(odd) .description h4, .service-item:nth-child(odd) .description p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.7rem;
+        margin: 5em 0 2em 0;
+    }
+
+    .reservation {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+        padding: 3em 0;
+        width: 30em;
+    }
+
+    .hero {
+        padding-top: 10em;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    header {
+        height: 50em;
+    }
+
+    .hero {
+        height: 100%;
+        padding:  2em 1em;
+    }
+
+    .hero h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 2rem;
+        margin: 5em 0 2em 0;
+    }
+
+    #services h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        padding: 1em;
+    }
+    .reservation {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+        padding: 3em 0;
+        width: 23em;
+    }
+
+    form {
+        width: 20em;
+    }
+}

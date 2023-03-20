@@ -1,0 +1,135 @@
+#header-reservation {
+    background: url(./assets/img/food-world6.jpg) no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 32em;
+}
+
+#reservation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+    background-color: whitesmoke;
+}
+
+.reservation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+    margin: 4em;
+    width: 45em;
+    background: url(./assets/img/food-world4.jpg);
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 15px 10px 40px rgba(27, 27, 27, 0.862);
+
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2.5em 0;
+    text-align: center;
+}
+
+.horaires {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 25px;
+}
+
+.horaires h4 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 3px 3px black;
+
+}
+
+.horaires p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    text-align: center;
+    text-shadow: 2px 3px 3px black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 25em;
+}
+
+input {
+    border-radius: 25px !important;
+    background-color: rgba(245, 245, 245, 0.546) !important;
+    font-size: 1.2rem;
+}
+
+form button {
+    color: #fff !important;
+    background-color: black !important;
+    border: none;
+}
+
+form button:hover {
+    color: black !important;
+    background-color: #fff !important;
+    border: 2px solid black !important;
+    transition: 0.2s !important;
+}
+
+textarea {
+    width: 100%;
+    height: 15em;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.546) !important;
+
+}
+
+
+/*** MEDIA QUERIES  ***/
+
+@media screen and (max-width: 768px) {
+    .reservation {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+        padding: 3em 0;
+        width: 30em;
+    }
+
+    .hero {
+        padding-top: 10em;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .reservation {
+        flex-direction: column;
+        text-align: center;
+        gap: 3em;
+        padding: 3em 0;
+        width: 23em;
+    }
+
+    form {
+        width: 20em;
+    }
+}
